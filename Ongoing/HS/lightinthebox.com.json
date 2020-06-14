@@ -1,0 +1,31 @@
+[
+  {
+    "url_regex": ["/fr/index.php"],
+    "apply_code_type": "ajax",
+    "node_success_feedback": "#ot_total",
+    "node_error_feedback": "",
+    "node_total": "",
+    "node_subtotal": "#ot_subtotal",
+    "node_discount": "#ot_coupon",
+    "node_shipping_fee": "#ot_combine_shippnig_insurance",
+    "node_trigger_code_input": "#inputEditCoupon",
+    "node_applied_code": "",
+    "node_code_input": "#inputCouponCode",
+    "node_code_submit": "#inputCouponSubmit",
+    "node_code_remove": "",
+    "node_success_message": "#new-coupon-valid-input .valid:visible",
+    "node_error_message": "#inputCouponValResult .invalid.red",
+    "node_undefined_message": "",
+    "parse_total": "",
+    "parse_subtotal": "",
+    "parse_discount": "",
+    "parse_shipping_fee": "",
+    "parse_applied_code": "",
+    "code_applied_callbacks": [],
+    "code_removed_callbacks": [],
+    "delay_code_remove": 3000,
+    "delay_code_submit": 2000,
+    "nodes_activation_required": ["#ot_total"],
+    "code_apply_async_actions_timeout": 35000
+  }
+]

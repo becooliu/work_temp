@@ -1,0 +1,106 @@
+{
+  "login": [
+    {
+      "url": "https://www.intermarche.com/",
+      "node_inspect": ".c-header-interactive__header .connect-prehome",
+      "node_target": ".c-header-interactive__header .connect-prehome",
+      "event_type": "click"
+    },
+    {
+      "url": "https://itmconnect.mousquetaires.com/auth/realms/red-fo-desktop/protocol/openid-connect/auth\\?\\S+",
+      "node_inspect": "input[name='username']",
+      "node_target": "input[name='username']",
+      "event_type": "input",
+      "value": "{account}"
+    },
+    {
+      "node_inspect": "input[name='password']",
+      "node_target": "input[name='password']",
+      "event_type": "input",
+      "value": "{password}"
+    },
+    {
+      "node_inspect": "#kc-login",
+      "node_target": "#kc-login",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "url": "https://www.intermarche.com/magasins/10147/montpellier-34000"
+    }
+  ],
+  "product": [
+    {
+      "node_inspect": "[class^='add-to-cart-'] > a",
+      "node_target": "[class^='add-to-cart-'] > a",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "optional_operate" : [
+        {
+          "node_inspect": "ul li[class^='AddToCartButtonV2styled__StyledListItem-']:not(.gkrncP) a",
+          "node_target": "ul li[class^='AddToCartButtonV2styled__StyledListItem-']:not(.gkrncP) a",
+          "event_type": "click",
+          "value": ""
+        }
+      ]
+    },
+    {
+      "node_inspect": ".c-icon .icon-ic_digital_erreur",
+      "node_target": ".c-icon .icon-ic_digital_erreur",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": "#cart-navbar",
+      "node_target": "#cart-navbar",
+      "event_type": "click",
+      "delay_time": 3000,
+      "value": ""
+    },
+    {
+      "node_inspect": "button.sc-bYwvMP",
+      "node_target": "button.sc-bYwvMP",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": ".sc-jGkVzM button.sc-bYTsla",
+      "node_target": ".sc-jGkVzM button.sc-bYTsla",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": "[id^='creneau-']:nth-of-type(1) > div",
+      "node_target": "[id^='creneau-']:nth-of-type(1) > div",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": "button.sc-MKjYC:not(:disabled)",
+      "node_target": "button.sc-MKjYC",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "url": "https://www.intermarche.com/commandes/10147/panier"
+    }
+  ],
+  "clear": {
+    "url": "https://www.intermarche.com/commandes/10147/panier",
+    "loop_operate": [
+      {
+        "node_inspect": "div[class^='HeadingCheckout__EmptyCart-'] .c-icon .icon.icon-ic_digital_poubelle",
+        "node_target": "div[class^='HeadingCheckout__EmptyCart-'] .c-icon .icon.icon-ic_digital_poubelle",
+        "event_type": "click"
+      },
+      {
+        "node_inspect": "button[class^='CartEmptyConfirmation__ConfirmButton-']",
+        "node_target": "button[class^='CartEmptyConfirmation__ConfirmButton-']",
+        "event_type": "click"
+      }
+    ],
+    "node_empty": "h2.sc-imapFV , div[class^='EmptyCart__EmptyCartWrapper-'] h2[class^='EmptyCart__EmptyCartTitle-']"
+  }
+}

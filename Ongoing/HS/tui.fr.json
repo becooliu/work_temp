@@ -1,0 +1,29 @@
+[
+  {
+    "url_regex": ["/Tunnel/Step1/Selection/" , "/Tunnel/Step3/"],
+    "apply_code_type": "ajax",
+    "node_success_feedback": ".fancy.fancy--loader:not(.js--active)",
+    "node_error_feedback": ".fancy.fancy--loader:not(.js--active)",
+    "node_total": ".quotation__total .recapTotalPrice:eq(1)",
+    "node_subtotal": "#divRateDetail h4:contains('Sous-total') + span",
+    "node_discount": "ul.inline-container .three-col--inline:last-child span",
+    "node_shipping_fee": "",
+    "node_trigger_code_input": "#divPromoCode .btn-reset , .promo-code .btn-reset",
+    "node_applied_code": "",
+    "node_code_input": "#PromoCode",
+    "node_code_submit": "#PromoCode + .btn",
+    "node_code_remove": "",
+    "node_success_message": ".promo-code.success .promo-code__container:not(.js--hide) span",
+    "node_error_message": ".promo-code.error #promoCodeLabel",
+    "node_undefined_message": "",
+    "parse_total": "",
+    "parse_subtotal": "",
+    "parse_discount": "",
+    "parse_shipping_fee": "",
+    "parse_applied_code": "",
+    "code_applied_callbacks": [],
+    "code_removed_callbacks": [],
+    "delay_code_remove": 0,
+    "delay_code_submit": 0
+  }
+]

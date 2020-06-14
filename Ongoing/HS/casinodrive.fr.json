@@ -1,0 +1,69 @@
+{
+  "login": [
+    {
+      "url": "https://www.3suisses.fr/login.html",
+      "node_inspect": "#login",
+      "node_target": "#login",
+      "event_type": "input",
+      "value": "{account}"
+    },
+    {
+      "node_inspect": "#login_pass",
+      "node_target": "#login_pass",
+      "event_type": "input",
+      "value": "{password}"
+    },
+    {
+      "node_inspect": "#form_login .form__submit button.btn--prin",
+      "node_target": "#form_login .form__submit button.btn--prin",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "url": "https://www.mescoursescasino.fr/ecommerce/app/createOrUpdateUserCookie\\.do\\?comeFrom=compteClient"
+    }
+  ],
+  "product": [
+    {
+      "node_inspect": "#select2-select-product-taille-container",
+      "node_target": "#select2-select-product-taille-container",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": ".select2-container--open .select2-results__options .select2-results__option:first-of-type",
+      "node_target": ".select2-container--open .select2-results__options .select2-results__option:first-of-type",
+      "event_type": "click",
+      "delay_time": 5000,
+      "value": ""
+    },
+    {
+      "node_inspect": "#add-product",
+      "node_target": "#add-product",
+      "delay_time": 5000,
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": "#popup-add .popup-add-recap-actions .btn--prin",
+      "node_target": "#popup-add .popup-add-recap-actions .btn--prin",
+      "event_type": "click",
+      "delay_time": 10000,
+      "value": ""
+    },
+    {
+      "url": "https://www.3suisses.fr/shopping_cart.html"
+    }
+  ],
+  "clear": {
+    "url": "https://www.3suisses.fr/shopping_cart.html",
+    "loop_operate": [
+      {
+        "node_inspect": ".table-simulation-content .cart-recap-delete .cart__delete:eq(0)",
+        "node_target": ".table-simulation-content .cart-recap-delete .cart__delete:eq(0)",
+        "event_type": "click"
+      }
+    ],
+    "node_empty": "#list-product.cart-empty"
+  }
+}

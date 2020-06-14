@@ -1,0 +1,29 @@
+[
+  {
+    "url_regex": ["/fra/fr-fr/store/\\S+"],
+    "apply_code_type": "ajax",
+    "node_success_feedback": "",
+    "node_error_feedback": "",
+    "node_total": "iframe:eq(0) .cart-total-cost .otktitle-2",
+    "node_subtotal": "iframe:eq(0) .cart-item-price-wrapper .otkc",
+    "node_discount": "",
+    "node_shipping_fee": "",
+    "node_trigger_code_input": "iframe:eq(0) #promoCodeTitle",
+    "node_applied_code": "",
+    "node_code_input": "iframe:eq(0) #promoCodeInputBox",
+    "node_code_submit": "iframe:eq(0) .promo-code-submit",
+    "node_code_remove": "",
+    "node_success_message": "",
+    "node_error_message": "iframe:eq(0) #promoCodeError",
+    "node_undefined_message": "",
+    "parse_total": "",
+    "parse_subtotal": "",
+    "parse_discount": "",
+    "parse_shipping_fee": "",
+    "parse_applied_code": "",
+    "code_applied_callbacks": [],
+    "code_removed_callbacks": [],
+    "delay_code_remove": 0,
+    "delay_code_submit": 0
+  }
+]

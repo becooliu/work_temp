@@ -1,0 +1,36 @@
+{
+  "product": [
+    {
+      "node_inspect": ".footer_tc_privacy_button",
+      "node_target": ".footer_tc_privacy_button",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": ".product-add-button .product-add-cart",
+      "node_target": ".product-add-button .product-add-cart",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": "#minicart-container .header-top-tool-link .header-top-tool-title",
+      "node_target": "#minicart-container .header-top-tool-link .header-top-tool-title",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "url": "https://www.bhv.fr/cart"
+    }
+  ],
+  "clear": {
+    "url": "https://www.bhv.fr/cart#",
+    "loop_operate": [
+      {
+        "node_inspect": ".checkout-products-container .checkout-product-remove",
+        "node_target": ".checkout-products-container .checkout-product-remove",
+        "event_type": "click"
+      }
+    ],
+    "node_empty": ".checkout-empty p"
+  }
+}

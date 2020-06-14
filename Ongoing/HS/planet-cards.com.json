@@ -1,0 +1,30 @@
+[
+  {
+    "url_regex": ["/checkout/cart/"],
+    "apply_code_type": "form",
+    "node_success_feedback": "",
+    "node_error_feedback": "",
+    "node_total": ".cart-totals-grandtotal .amount",
+    "node_subtotal": ".cart-totals-subtotal .amount",
+    "node_discount": ".cart-totals-discount .discount-right .amount",
+    "node_shipping_fee": ".selected-shipping .content-label-shipping .shipping-price",
+    "node_trigger_code_input": "",
+    "node_applied_code": ".discount-coupon-ok .discount-codes li",
+    "node_code_input": "#discount-coupon-form input[name='coupon_code']",
+    "node_code_submit": "#discount-coupon-form .btn-coupon",
+    "node_code_remove": ".discount-coupon-ok a[rel='cancel']",
+    "node_success_message": "",
+    "node_error_message": ".page-content .messages .error-msg li",
+    "node_undefined_message": "",
+    "parse_total": "",
+    "parse_subtotal": "",
+    "parse_discount": "",
+    "parse_shipping_fee": "",
+    "parse_applied_code": "",
+    "code_applied_callbacks": [],
+    "code_removed_callbacks": [],
+    "delay_code_remove": 0,
+    "delay_code_submit": 0,
+    "executor_tab_policy": "ui_tab"
+  }
+]

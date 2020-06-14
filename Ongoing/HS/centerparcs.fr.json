@@ -1,0 +1,62 @@
+{
+  "product": [
+    {
+      "node_inspect": ".accommodationCartouche-bookingButton:eq(0)",
+      "node_target": ".accommodationCartouche-bookingButton:eq(0)",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": ".js_popinParticipantsSubmit",
+      "node_target": ".js_popinParticipantsSubmit",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "url": "https://booking2.centerparcs.fr/step\\?hash=\\S+"
+    },
+    {
+      "node_inspect": ".reservationFooter-estimatedTotalButton",
+      "node_target": ".reservationFooter-estimatedTotalButton",
+      "event_type": "click",
+      "delay_time": 5000,
+      "value": ""
+    },
+    {
+      "url": "https://booking2.centerparcs.fr/step\\?hash=\\S+",
+      "node_inspect": "input[name='login-email']",
+      "node_target": "input[name='login-email']",
+      "event_type": "input",
+      "value": "466616481@qq.com"
+    },
+    {
+      "node_inspect": "input[name='login-password']",
+      "node_target": "input[name='login-password']",
+      "event_type": "input",
+      "value": "mBYTE123."
+    },
+    {
+      "node_inspect": ".contactStep-loginAction",
+      "node_target": ".contactStep-loginAction",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "url": "https://booking2.centerparcs.fr/payment\\?hash=\\S+"
+    },
+    {
+      "optional_operate": [
+        {
+          "node_inspect": "#js-stepSubmit",
+          "node_target": "#js-stepSubmit",
+          "event_type": "click",
+          "delay_time": 5000,
+          "value": ""
+        }
+      ]
+    },
+    {
+      "url": "https://booking2.centerparcs.fr/payment\\?hash=\\S+"
+    }
+  ]
+}
