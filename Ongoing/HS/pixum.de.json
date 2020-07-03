@@ -1,0 +1,84 @@
+{
+  "login": [
+    {
+      "url": "https://www.pixum.de/",
+      "node_inspect": "ul.header--MuiList-root li:last-child:visible",
+      "node_target": "ul.header--MuiList-root li:last-child",
+      "event_type": "click",
+      "delay_time": 3000,
+      "value": ""
+    },
+    {
+      "url": "https://www.pixum.de/",
+      "node_inspect": "#email",
+      "node_target": "#email",
+      "event_type": "input",
+      "value": "{account}"
+    },
+    {
+      "node_inspect": "#password",
+      "node_target": "#password",
+      "event_type": "input",
+      "value": "{password}"
+    },
+    {
+      "node_inspect": ".header--MuiDialog-container:visible .header--MuiButton-contained",
+      "node_target": ".header--MuiDialog-container:visible .header--MuiButton-contained",
+      "event_type": "click",
+      "value": "",
+      "save_before_refresh": true
+    },
+    {
+      "url": "https://www.pixum.de/"
+    }
+  ],
+  "product": [
+    {
+      "node_inspect": ".wcc--MuiGrid-container:eq(0) > .wcc--MuiGrid-item:first-child .wcc--MuiTypography-overline .wcc--MuiButton-root:visible",
+      "node_target": ".wcc--MuiGrid-container:eq(0) > .wcc--MuiGrid-item:first-child .wcc--MuiTypography-overline .wcc--MuiButton-root:visible",
+      "event_type": "click",
+      "delay_time": 7000,
+      "value": ""
+    },
+    {
+      "node_inspect": ".MuiDialog-paper [data-component='dialog--cancel-button']",
+      "node_target": ".MuiDialog-paper [data-component='dialog--cancel-button']",
+      "event_type": "click",
+      "delay_time": 5000,
+      "value": ""
+    },
+    {
+      "node_inspect": ".MuiBox-root[data-component='bottom-bar--container'] [data-component='bottom-bar--addtocart-button']",
+      "node_target": ".MuiBox-root[data-component='bottom-bar--container'] [data-component='bottom-bar--addtocart-button']",
+      "event_type": "click",
+      "delay_time": 5000,
+      "value": ""
+    },
+    {
+      "node_inspect": "[data-component='modal'] .next-button",
+      "node_target": "[data-component='modal'] .next-button",
+      "event_type": "click",
+      "delay_time": 5000,
+      "value": ""
+    },
+    {
+      "url": "https://www.pixum.de/cart"
+    }
+  ],
+  "clear": {
+    "url": "https://www.pixum.de/cart",
+    "loop_operate": [
+      {
+        "node_inspect": ".cart-body-wrapper .cart-item:eq(0) .delete-button",
+        "node_target": ".cart-body-wrapper .cart-item:eq(0) .delete-button",
+        "event_type": "click"
+      },
+      {
+        "node_inspect": ".modalButton-wrapper__right .button",
+        "node_target": ".modalButton-wrapper__right .button",
+        "event_type": "click"
+      }
+    ],
+    "node_empty": ".empty-state-wrapper:visible h2"
+  }
+}
