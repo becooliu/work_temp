@@ -1,0 +1,73 @@
+[
+  {
+    "url_regex": [
+      "/shopping-bag"
+    ],
+    "apply_code_type": "ajax",
+    "node_success_feedback": ".SubTotal:not(:has(.loader)) .PromoCode__active-code",
+    "node_error_feedback": ".SubTotal:not(:has(.loader)) .Input__text--error",
+    "node_total": ".SubTotal__totalCostPrice .SubTotal__item-last",
+    "node_subtotal": ".SubTotal__totalBeforePrice-last",
+    "node_discount": ".SubTotal__wrapper--promo .SubTotal__item.SubTotal__item-last",
+    "node_shipping_fee": "#deliveryMethods + .SubTotal__item-last",
+    "node_trigger_code_input": ".PromoCode .PromoCode__toggle-button",
+    "node_applied_code": "",
+    "node_code_input": "#promo-code",
+    "node_code_submit": "button[data-qa='apply-button']",
+    "node_code_remove": ".PromoCode__remove-button",
+    "node_success_message": ".PromoCode__active-code:visible",
+    "node_error_message": ".PromoCode__wrapper .Input__text--error:visible",
+    "node_undefined_message": "",
+    "parse_total": "",
+    "parse_subtotal": "",
+    "parse_discount": "",
+    "parse_shipping_fee": "",
+    "parse_applied_code": "",
+    "code_applied_callbacks": [],
+    "code_removed_callbacks": [
+      {
+        "inspector": ".SubTotal:not(:has(.loader)) .PromoCode__toggle-button",
+        "target": ".PromoCode .PromoCode__toggle-button",
+        "type": "click"
+      },
+      {
+        "inspector": "#promo-code"
+      },
+      {
+        "inspector": ".SubTotal:not(:has(#promo-code))"
+      }
+    ],
+    "delay_code_remove": 1000,
+    "delay_code_submit": 1000
+  },
+  {
+    "url_regex": [
+      "/OrderShippingBillingView",
+      "/OrderPaymentDetailsView"
+    ],
+    "apply_code_type": "ajax",
+    "node_success_feedback": "#TotalOrderAmountDL dd",
+    "node_error_feedback": "#promotionCodeError li:visible",
+    "node_total": "#TotalOrderAmountDL dd",
+    "node_subtotal": ".subTotalOrderAmount dd",
+    "node_discount": "",
+    "node_shipping_fee": ".totalShippingAmount .shippingCharge",
+    "node_trigger_code_input": "#productPromotionCode",
+    "node_applied_code": "",
+    "node_code_input": "#promotionCodeInput",
+    "node_code_submit": ".promoCodeEntry .btn",
+    "node_code_remove": "",
+    "node_success_message": "",
+    "node_error_message": "#promotionCodeError li:visible",
+    "node_undefined_message": "",
+    "parse_total": "",
+    "parse_subtotal": "",
+    "parse_discount": "",
+    "parse_shipping_fee": "",
+    "parse_applied_code": "",
+    "code_applied_callbacks": [],
+    "code_removed_callbacks": [],
+    "delay_code_remove": 2000,
+    "delay_code_submit": 0
+  }
+]
