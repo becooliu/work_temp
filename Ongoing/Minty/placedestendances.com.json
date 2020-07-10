@@ -1,0 +1,48 @@
+[
+  {
+    "url_regex": ["/fr/fr/panier"],
+    "apply_code_type": "form",
+    "node_success_feedback": ".totalPanier #priceTotal",
+    "node_error_feedback": "#codePromoErrMsg:visible",
+    "node_total": ".totalPanier #priceTotal:visible",
+    "node_subtotal": "#priceSousTotal:visible",
+    "node_discount": ".marginPromo .Price:visible",
+    "node_shipping_fee": "",
+    "node_trigger_code_input": "#code_promo:visible",
+    "node_applied_code": "",
+    "node_code_input": "#codePromoInput:visible",
+    "node_code_submit": "#codePromoValidate:visible",
+    "node_code_remove": ".resumePanier .deleteCodePromo:visible a.supp:visible",
+    "node_success_message": ".marginPromo .labelCodePromo",
+    "node_error_message": "#codePromoErrMsg:visible",
+    "node_undefined_message": "",
+    "parse_total": "",
+    "parse_subtotal": "",
+    "parse_discount": "",
+    "parse_shipping_fee": "",
+    "parse_applied_code": "",
+    "code_applied_callbacks": [
+      {
+        "inspector": "body:not(:has(#codePromoValidate:visible))"
+      }
+
+    ],
+    "code_removed_callbacks": [
+      {
+        "inspector": ".resumePanier .deleteCodePromo:visible a.supp:visible"
+      },
+      {
+        "inspector": ".resumePanier .marginPromo:visible",
+        "target": ".resumePanier .deleteCodePromo:visible a.supp",
+        "type": "click",
+        "value": ""
+      },
+      {
+        "inspector": "#code_promo:visible"
+      }
+    ],
+    "delay_code_remove": 1000,
+    "delay_code_submit": 3000,
+    "nodes_activation_required": [".resumePanier"]
+  }
+]
