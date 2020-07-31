@@ -38,25 +38,21 @@
     {
       "node_inspect": ".contactStep-loginAction",
       "node_target": ".contactStep-loginAction",
+      "delay_time": 3000,
       "event_type": "click",
       "value": ""
     },
+    
     {
-      "url": "https://booking2.centerparcs.fr/payment\\?hash=\\S+"
+      "node_inspect": "#js-stepSubmit",
+      "node_target": "#js-stepSubmit",
+      "event_type": "click",
+      "delay_time": 5000,
+      "value": ""
     },
     {
-      "optional_operate": [
-        {
-          "node_inspect": "#js-stepSubmit",
-          "node_target": "#js-stepSubmit",
-          "event_type": "click",
-          "delay_time": 5000,
-          "value": ""
-        }
-      ]
-    },
-    {
-      "url": "https://booking2.centerparcs.fr/payment\\?hash=\\S+"
+      "url": "https://booking2.centerparcs.fr/payment\\?hash=U82Sm4\\S+"
     }
+
   ]
 }

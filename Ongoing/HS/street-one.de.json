@@ -1,0 +1,42 @@
+{
+  "product": [
+    {
+      "node_inspect": ".option-config",
+      "node_target": ".option-config",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": ".size-container:visible",
+      "node_target": ".size-container:visible [class^='pl']:not(.text-gray):eq(0)",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": ".btn[uptrends='buttonAddToBasket']",
+      "node_target": ".btn[uptrends='buttonAddToBasket']",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": ".btn[uptrends='buttonToBasket']",
+      "node_target": ".btn[uptrends='buttonToBasket']",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "url": "https://www.street-one.de/basket"
+    }
+  ],
+  "clear": {
+    "url": "https://www.street-one.de/basket",
+    "loop_operate": [
+      {
+        "node_inspect": ".card-body div.d-none span.ng-star-inserted:eq(0)",
+        "node_target": ".card-body div.d-none span.ng-star-inserted:eq(0)",
+        "event_type": "click"
+      }
+    ],
+    "node_empty": "#list-product.cart-empty"
+  }
+}

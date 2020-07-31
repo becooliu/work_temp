@@ -1,0 +1,79 @@
+{
+  "login": [
+    {
+      "url": "https://www.lafourchette.com/",
+      "node_inspect": "button[data-test='user-space']",
+      "node_target": "button[data-test='user-space']",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "url": "https://www.lafourchette.com/",
+      "node_inspect": "#identification_email",
+      "node_target": "#identification_email",
+      "event_type": "input",
+      "value": "{account}"
+    },
+    {
+      "node_inspect": "[data-testid='checkout-submit-email']:not([disabled])",
+      "node_target": "[data-testid='checkout-submit-email']:not([disabled])",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": "#password",
+      "node_target": "#password",
+      "event_type": "input",
+      "value": "{password}"
+    },
+    {
+      "node_inspect": "button[data-testid='submit-password']",
+      "node_target": "button[data-testid='submit-password']",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "url": "https://www.lafourchette.com/"
+    }
+  ],
+  "product": [
+    {
+      "node_inspect": "div[overflow] button[class^='css-']",
+      "node_target": "div[overflow] button[class^='css-']",
+      "event_type": "click",
+      "delay_time": 5000,
+      "value": ""
+    },
+    {
+      "node_inspect": "[data-testid='booking-layout-overlay'] [data-testid='date-tab-content'] [data-testid^='date-d']:not([disabled]):eq(0)",
+      "node_target": "[data-testid='booking-layout-overlay'] [data-testid='date-tab-content'] [data-testid^='date-d']:not([disabled]):eq(0)",
+      "event_type": "click",
+      "delay_time": 2000,
+      "value": ""
+    },
+    {
+      "node_inspect": "[data-testid='booking-layout-overlay'] [data-testid='service-content'] [data-testid^='service-']:not([disabled]):eq(0)",
+      "node_target": "[data-testid='booking-layout-overlay'] [data-testid='service-content'] [data-testid^='service-']:not([disabled]):eq(0)",
+      "event_type": "click",
+      "delay_time": 2000,
+      "value": ""
+    },
+    {
+      "node_inspect": "[data-testid='booking-layout-overlay'] [data-testid='timeslot-content'] [data-testid^='hour-']:not([disabled]):eq(0)",
+      "node_target": "[data-testid='booking-layout-overlay'] [data-testid='timeslot-content'] [data-testid^='hour-']:not([disabled]):eq(0)",
+      "event_type": "click",
+      "delay_time": 2000,
+      "value": ""
+    },
+    {
+      "node_inspect": "button[data-test='checkout-checkout-submit']:visible",
+      "node_target": "button[data-test='checkout-checkout-submit']:visible",
+      "event_type": "click",
+      "delay_time": 5000,
+      "value": ""
+    },
+    {
+      "node_inspect": "#promoCode:visible"
+    }
+  ]
+}

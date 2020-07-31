@@ -1,0 +1,75 @@
+{
+  "login": [
+    {
+      "url": "https://www.3suisses.fr/login.html",
+      "node_inspect": "#login",
+      "node_target": "#login",
+      "event_type": "input",
+      "value": "{account}"
+    },
+    {
+      "node_inspect": "#login_pass",
+      "node_target": "#login_pass",
+      "event_type": "input",
+      "value": "{password}"
+    },
+    {
+      "node_inspect": "#form_login .form__submit button.btn--prin",
+      "node_target": "#form_login .form__submit button.btn--prin",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "url": "https://www.3suisses.fr/account.html"
+    }
+  ],
+  "product": [
+    {
+      "node_inspect": ".decoy-pricing-item .decoy-pricing-item__cta",
+      "node_target": ".decoy-pricing-item .decoy-pricing-item__cta",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": ".package-items .rate-info [id^='increment-qty-btn-']:eq(0)",
+      "node_target": ".package-items .rate-info [id^='increment-qty-btn-']:eq(0)",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": ".btn[data-cy='pDet_nextBtn']",
+      "node_target": ".btn[data-cy='pDet_nextBtn']",
+      "event_type": "click",
+      "delay_time": 3000,
+      "value": ""
+    },
+    {
+      "node_inspect": "#datetime-next-btn",
+      "node_target": "#datetime-next-btn",
+      "event_type": "click",
+      "delay_time": 1000,
+      "value": ""
+    },
+    {
+      "node_inspect": ".btn.btn-success",
+      "node_target": ".btn.btn-success",
+      "event_type": "click",
+      "delay_time": 1000,
+      "value": ""
+    },
+    {
+      "node_inspect": ".cart-footer .subtotal-total:not(:empty):visible"
+    }
+  ],
+  "clear": {
+    "url": "https://www.3suisses.fr/shopping_cart.html",
+    "loop_operate": [
+      {
+        "node_inspect": ".table-simulation-content .cart-recap-delete .cart__delete:eq(0)",
+        "node_target": ".table-simulation-content .cart-recap-delete .cart__delete:eq(0)",
+        "event_type": "click"
+      }
+    ],
+    "node_empty": "#list-product.cart-empty"
+  }
+}

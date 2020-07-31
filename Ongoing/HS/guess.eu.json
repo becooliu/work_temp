@@ -1,0 +1,37 @@
+{
+  "product": [
+    {
+      "node_inspect": ".add-to-cart__button",
+      "node_target": ".add-to-cart__button",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": "#add-product",
+      "node_target": "#add-product",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": "#popup-add .popup-add-recap-actions .btn--prin",
+      "node_target": "#popup-add .popup-add-recap-actions .btn--prin",
+      "event_type": "click",
+      "delay_time": 5000,
+      "value": ""
+    },
+    {
+      "url": "https://www.3suisses.fr/shopping_cart.html"
+    }
+  ],
+  "clear": {
+    "url": "https://www.3suisses.fr/shopping_cart.html",
+    "loop_operate": [
+      {
+        "node_inspect": ".table-simulation-content .cart-recap-delete .cart__delete:eq(0)",
+        "node_target": ".table-simulation-content .cart-recap-delete .cart__delete:eq(0)",
+        "event_type": "click"
+      }
+    ],
+    "node_empty": "#list-product.cart-empty"
+  }
+}
