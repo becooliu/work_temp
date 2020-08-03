@@ -1,0 +1,30 @@
+[
+  {
+    "url_regex": ["/"],
+    "apply_code_type": "ajax",
+    "node_success_feedback": "",
+    "node_error_feedback": ".bottom-alert-wrapper.success.is-visible",
+    "node_total": ".total-recap .text-black",
+    "node_subtotal": "#sidebar-scroll-container table .condensed.align-right",
+    "node_discount": "",
+    "node_shipping_fee": "",
+    "node_trigger_code_input": ".main-wrapper div[class*='-container'] .btn:visible",
+    "node_applied_code": "",
+    "node_code_input": "#promo-code",
+    "node_code_submit": ".promo-code .promo-code-wrapper:visible .btn",
+    "node_code_remove": "",
+    "node_success_message": "",
+    "node_error_message": ".bottom-alert-wrapper.success.is-visible .text-main b",
+    "node_undefined_message": "",
+    "parse_total": "",
+    "parse_subtotal": "",
+    "parse_discount": "",
+    "parse_shipping_fee": "",
+    "parse_applied_code": "",
+    "code_applied_callbacks": [],
+    "code_removed_callbacks": [],
+    "delay_code_remove": 0,
+    "delay_code_submit": 10000,
+    "code_apply_async_actions_timeout": 40000
+  }
+]

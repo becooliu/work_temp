@@ -1,0 +1,50 @@
+{
+  "product": [
+    {
+      "node_inspect": "div[class^='BuyBox-'] button[data-testid='add-to-basket']",
+      "node_target": "div[class^='BuyBox-'] button[data-testid='add-to-basket']",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": ".orderprocess-button-loginorregister > a",
+      "node_target": ".orderprocess-button-loginorregister > a",
+      "event_type": "click",
+      "delay_time": 2000,
+      "value": ""
+    },
+    {
+      "url": "",
+      "node_inspect": "input[name='complete-login-form-email']",
+      "node_target": "input[name='complete-login-form-email']",
+      "event_type": "input",
+      "value": "{account}"
+    },
+    {
+      "node_inspect": "input[name='complete-login-form-password']",
+      "node_target": "input[name='complete-login-form-password']",
+      "event_type": "input",
+      "value": "mBYTE123."
+    },
+    {
+      "node_inspect": ".login-form-btn a.orderprocess-action-button",
+      "node_target": ".login-form-btn a.orderprocess-action-button",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "url": ""
+    }
+  ],
+  "clear": {
+    "url": "",
+    "loop_operate": [
+      {
+        "node_inspect": "",
+        "node_target": "",
+        "event_type": "click"
+      }
+    ],
+    "node_empty": ""
+  }
+}

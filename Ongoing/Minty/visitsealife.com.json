@@ -1,0 +1,30 @@
+[
+  {
+    "url_regex": ["/de/berlin/tickets/"],
+    "apply_code_type": "ajax",
+    "node_success_feedback": "",
+    "node_error_feedback": ".panel.panel-flush .panel-body span:visible",
+    "node_total": ".cart-footer .subtotal-total:not(:empty)",
+    "node_subtotal": ".desktop-sub-container .panel-body .subtotal-total:not(:empty)",
+    "node_discount": "",
+    "node_shipping_fee": "",
+    "node_trigger_code_input": "#topBarPromo",
+    "node_applied_code": "",
+    "node_code_input": ".modal-promo #promobox-input",
+    "node_code_submit": ".panel-footer .btn-success",
+    "node_code_remove": "",
+    "node_success_message": "",
+    "node_error_message": ".panel.panel-flush .panel-body span",
+    "node_undefined_message": "",
+    "parse_total": "",
+    "parse_subtotal": "",
+    "parse_discount": "",
+    "parse_shipping_fee": "",
+    "parse_applied_code": "",
+    "code_applied_callbacks": [],
+    "code_removed_callbacks": [],
+    "delay_code_remove": 0,
+    "delay_code_submit": 0,
+    "nodes_activation_required": []
+  }
+]

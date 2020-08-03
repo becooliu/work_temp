@@ -1,0 +1,29 @@
+[
+  {
+    "url_regex": ["/basket"],
+    "apply_code_type": "ajax",
+    "node_success_feedback": "",
+    "node_error_feedback": "#voucherform .text-danger:visible",
+    "node_total": "#priceInfo strong.product-price--large",
+    "node_subtotal": "#priceInfo >div .product-price",
+    "node_discount": "#voucherform .product-price--discount",
+    "node_shipping_fee": "#priceInfo span.product-price.product-price--large",
+    "node_trigger_code_input": "",
+    "node_applied_code": "#voucherform span.text-dark",
+    "node_code_input": "input[name='voucherCode']",
+    "node_code_submit": ".btn[type='submit']",
+    "node_code_remove": "#voucherform button.btn",
+    "node_success_message": "#voucherform span.text-dark",
+    "node_error_message": "#voucherform .text-danger li",
+    "node_undefined_message": "",
+    "parse_total": "",
+    "parse_subtotal": "",
+    "parse_discount": "",
+    "parse_shipping_fee": "",
+    "parse_applied_code": "",
+    "code_applied_callbacks": [],
+    "code_removed_callbacks": [],
+    "delay_code_remove": 0,
+    "delay_code_submit": 2000
+  }
+]
