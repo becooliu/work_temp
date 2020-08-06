@@ -1,0 +1,129 @@
+{
+  "login": [
+    {
+      "url": "https://www.opodo.fr/home/",
+      "node_inspect": "#login-wrapper:visible .od-login-info-wrapper",
+      "node_target": "#login-wrapper:visible .od-login-info-wrapper",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "url": "https://www.opodo.fr/home/",
+      "node_inspect": ".login_fast_menu.opened",
+      "node_target": ".odf-box-content .header_login_button",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "url": "https://www.opodo.fr/home/",
+      "node_inspect": ".login_connectors.opened",
+      "node_target": ".email_login_container .email_input[name='email']:visible",
+      "event_type": "input",
+      "value": "{account}"
+    },
+    {
+      "node_inspect": ".login_connectors.opened",
+      "node_target": ".email_login_container .password_input[name='password']:visible",
+      "event_type": "input",
+      "value": "{password}"
+    },
+    {
+      "node_inspect": ".email_login_container .od-login-start-button:visible",
+      "node_target": ".email_login_container .od-login-start-button:visible",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "url": "https://www.opodo.fr/home/"
+    }
+  ],
+  "product": [
+    {
+      "node_inspect": "#departure-autocomplete0 .airportselector_input:visible",
+      "node_target": "#departure-autocomplete0 .airportselector_input:visible",
+      "event_type": "input",
+      "value": "Paris"
+    },
+    {
+      "node_inspect": ".deletable .suggestions .od-airportselector-suggestions-list .item:eq(0)",
+      "node_target": ".deletable .suggestions .od-airportselector-suggestions-list .item:eq(0)",
+      "event_type": "click",
+      "delay_time": 2000,
+      "value": ""
+    },
+    {
+      "node_inspect": "#destination-autocomplete0 .airportselector_input:visible",
+      "node_target": "#destination-autocomplete0 .airportselector_input:visible",
+      "event_type": "input",
+      "value": "Barcelone"
+    },
+    {
+      "node_inspect": ".deletable .suggestions .od-airportselector-suggestions-list .item:eq(0)",
+      "node_target": ".deletable .suggestions .od-airportselector-suggestions-list .item:eq(0)",
+      "event_type": "click",
+      "delay_time": 2000,
+      "value": ""
+    },
+    {
+      "node_inspect": "[data-hide='multipleTrip']:visible .od-ui-datepicker-display:eq(0)",
+      "node_target": "[data-hide='multipleTrip']:visible .od-ui-datepicker-display:eq(0)",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": ".od-ui-calendar-wrapper.open .od-ui-calendar-week .od-ui-calendar-day:not(.disabled):eq(0)",
+      "node_target": ".od-ui-calendar-wrapper.open .od-ui-calendar-week .od-ui-calendar-day:not(.disabled):eq(0)",
+      "event_type": "click",
+      "delay_time": 1000,
+      "value": ""
+    },
+    {
+      "node_inspect": "[data-hide='multipleTrip']:visible .od-ui-datepicker-display:eq(1)",
+      "node_target": "[data-hide='multipleTrip']:visible .od-ui-datepicker-display:eq(1)",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": ".od-ui-calendar-wrapper.open .od-ui-calendar-week .od-ui-calendar-day:not(.disabled.next.other):eq(3)",
+      "node_target": ".od-ui-calendar-wrapper.open .od-ui-calendar-week .od-ui-calendar-day:not(.disabled):eq(3)",
+      "event_type": "click",
+      "delay_time": 1000,
+      "value": ""
+    },
+    {
+      "node_inspect": ".od-flightsManager-search-flight-button:visible",
+      "node_target": ".od-flightsManager-search-flight-button:visible",
+      "event_type": "click",
+      "delay_time": 1000,
+      "value": ""
+    },
+    {
+      "node_inspect": ".result_wrapper .odf-grid-row-fixed .itinerary_description .itinerary_group:eq(0) .odf-selectable label",
+      "node_target": ".result_wrapper .odf-grid-row-fixed .itinerary_description .itinerary_group:eq(0) .odf-selectable label",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": ".od-book-btn-container .book_btn:eq(0)",
+      "node_target": ".od-book-btn-container .book_btn:eq(0)",
+      "event_type": "click",
+      "delay_time": 3000,
+      "value": ""
+    },
+
+    {
+      "url": "https://www.3suisses.fr/shopping_cart.html"
+    }
+  ],
+  "clear": {
+    "url": "https://www.3suisses.fr/shopping_cart.html",
+    "loop_operate": [
+      {
+        "node_inspect": ".table-simulation-content .cart-recap-delete .cart__delete:eq(0)",
+        "node_target": ".table-simulation-content .cart-recap-delete .cart__delete:eq(0)",
+        "event_type": "click"
+      }
+    ],
+    "node_empty": "#list-product.cart-empty"
+  }
+}

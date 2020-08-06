@@ -1,0 +1,38 @@
+{
+  "product": [
+    {
+      "node_inspect": "button[data-purpose='checkout.addtocart']",
+      "node_target": "button[data-purpose='checkout.addtocart']",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": "button[data-purpose='productsidebar.button.submit']",
+      "node_target": "button[data-purpose='productsidebar.button.submit']",
+      "event_type": "click",
+      "delay_time": 3000,
+      "value": ""
+    },
+    {
+      "node_inspect": "a[data-purpose='cart.button.submit.top']",
+      "node_target": "a[data-purpose='cart.button.submit.top']",
+      "event_type": "click",
+      "delay_time": 3000,
+      "value": ""
+    },
+    {
+      "url": "https://www.moemax.de/checkout/address"
+    }
+  ],
+  "clear": {
+    "url": "https://www.moemax.de/cart",
+    "loop_operate": [
+      {
+        "node_inspect": "button[data-purpose='productList.item.remove']:eq(0):visible",
+        "node_target": "button[data-purpose='productList.item.remove']:eq(0):visible",
+        "event_type": "click"
+      }
+    ],
+    "node_empty": "#main p[data-testid='no-products-message']"
+  }
+}

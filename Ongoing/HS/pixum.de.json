@@ -62,6 +62,15 @@
       "value": ""
     },
 
+
+
+    {
+      "node_inspect": ".wcc--MuiGrid-container:eq(0) > .wcc--MuiGrid-item:first-child .wcc--MuiTypography-overline .wcc--MuiButton-root:visible",
+      "node_target": ".wcc--MuiGrid-container:eq(0) > .wcc--MuiGrid-item:first-child .wcc--MuiTypography-overline .wcc--MuiButton-root:visible",
+      "event_type": "click",
+      "delay_time": 7000,
+      "value": ""
+    },
     {
       "node_inspect": ".MuiDialog-paper [data-component='dialog--cancel-button']",
       "node_target": ".MuiDialog-paper [data-component='dialog--cancel-button']",

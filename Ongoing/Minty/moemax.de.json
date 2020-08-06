@@ -1,0 +1,32 @@
+[
+  {
+    "url_regex": ["/checkout/address"],
+    "apply_code_type": "ajax",
+    "node_success_feedback": "._2P95o > span:visible",
+    "node_error_feedback": "div[data-purpose='input.errorMessage']:visible",
+    "node_total": "span:contains('Gesamtbetrag') + div [data-purpose='product.price.current']",
+    "node_subtotal": "span:contains('Warenwert') + div [data-purpose='product.price.current']",
+    "node_discount": "",
+    "node_shipping_fee": "span:contains('Lieferkosten') + div [data-purpose='product.price.current']",
+    "node_trigger_code_input": "",
+    "node_applied_code": "",
+    "node_code_input": "input[name='voucherCode']",
+    "node_code_submit": "button[data-purpose='checkout.voucherForm.button.submit']",
+    "node_code_remove": "button[data-purpose='voucher.remove']:visible",
+    "node_success_message": "._2P95o > span",
+    "node_error_message": "div[data-purpose='input.errorMessage']",
+    "node_undefined_message": "",
+    "parse_total": "",
+    "parse_subtotal": "",
+    "parse_discount": "",
+    "parse_shipping_fee": "",
+    "parse_applied_code": "",
+    "code_applied_callbacks": [],
+    "code_removed_callbacks": [
+      {"type": "click", "inspector": "[data-testid='cancel.button']:visible","target": "[data-testid='cancel.button']:visible", "value": ""}
+    ],
+    "delay_code_remove": 0,
+    "delay_code_submit": 0,
+    "nodes_activation_required": []
+  }
+]

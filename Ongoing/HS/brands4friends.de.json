@@ -1,0 +1,62 @@
+{
+  "login": [
+    {
+      "url": "https://www.brands4friends.de/login",
+      "node_inspect": "#j_username",
+      "node_target": "#j_username",
+      "event_type": "input",
+      "value": "{account}"
+    },
+    {
+      "node_inspect": "#j_password",
+      "node_target": "#j_password",
+      "event_type": "input",
+      "value": "{password}"
+    },
+    {
+      "node_inspect": "#js-login",
+      "node_target": "#js-login",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "url": "https://www.brands4friends.de/webshop/start"
+    }
+  ],
+  "product": [
+    {
+      "node_inspect": "#form-buy-size",
+      "node_target": "#form-buy-size",
+      "event_type": "select",
+      "node_option": "#form-buy-size option:not([disabled]):eq(1)",
+      "delay_time": 4000,
+      "value": ""
+    },
+    {
+      "node_inspect": "#submitShoppingForm",
+      "node_target": "#submitShoppingForm",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": ".addtobasket-overlay:visible a.button",
+      "node_target": ".addtobasket-overlay:visible a.button",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "url": "https://www.brands4friends.de/checkout/products"
+    }
+  ],
+  "clear": {
+    "url": "https://www.brands4friends.de/checkout/products",
+    "loop_operate": [
+      {
+        "node_inspect": ".campaign-group:not(.hidden) dl:nth-of-type(1) .delete.t-delete",
+        "node_target": ".campaign-group:not(.hidden) dl:nth-of-type(1) .delete.t-delete",
+        "event_type": "click"
+      }
+    ],
+    "node_empty": ".checkout-aborted p:not(:has(a))"
+  }
+}

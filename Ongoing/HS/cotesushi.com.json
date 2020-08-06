@@ -1,0 +1,88 @@
+{
+  "product": [
+    {
+      "node_inspect": ".product_btn_inner .btn_add_cart",
+      "node_target": ".product_btn_inner .btn_add_cart",
+      "event_type": "click",
+      "delay_time": 5000,
+      "value": ""
+    },
+    {
+      "optional_operate": [
+        {
+          "node_inspect": ".acc_wrapper:visible",
+          "node_target": ".acc_items_inner:visible label:first-child input",
+          "delay_time": 2000,
+          "event_type": "click"
+        },
+        {
+          "node_inspect": "div[class^='nav_'] button[class^='btn_']:visible",
+          "node_target": "div[class^='nav_'] button[class^='btn_']:visible",
+          "delay_time": 1000,
+          "event_type": "click"
+        },
+        {
+          "node_inspect": "section[class$='_ok_items_inner']:visible label:first-child",
+          "node_target": "section[class$='_ok_items_inner']:visible label:first-child input",
+          "delay_time": 2000,
+          "event_type": "click"
+        },
+        {
+          "node_inspect": "div[class^='nav_'] button[class^='btn_']:visible",
+          "node_target": "div[class^='nav_'] button[class^='btn_']:visible",
+          "delay_time": 1000,
+          "event_type": "click"
+        },
+        {
+          "node_inspect": "section[class$='_ok_items_inner']:visible label:first-child",
+          "node_target": "section[class$='_ok_items_inner']:visible label:first-child input",
+          "delay_time": 2000,
+          "event_type": "click"
+        },
+        {
+          "node_inspect": "div[class^='nav_'] button[class^='btn_']:visible",
+          "node_target": "div[class^='nav_'] button[class^='btn_']:visible",
+          "delay_time": 1000,
+          "event_type": "click"
+        }
+      ]
+    },
+    {
+      "node_inspect": ".cs_panel_right.panel_cart:visible"
+    },
+    {
+      "optional_operate": [
+        {
+          "node_inspect": ".cs_panel_right.panel_cart:hidden",
+          "node_target": ".main_nav .open_panel_cart.cart",
+          "event_type": "click"
+        }
+      ]
+    }
+  ],
+  "clear": {
+    "url": "https://cotesushi.com/",
+    "loop_operate": [
+      {
+        "node_inspect": ".main_nav .open_panel_cart.cart",
+        "node_target": ".main_nav .open_panel_cart.cart",
+        "event_type": "click"
+      },
+      {
+        "node_inspect": ".cs_panel_right.panel_cart:visible",
+        "node_target": ".products_cart .product_cart:first-child .btn_delete_product:visible",
+        "event_type": "click"
+      },
+      {
+        "optional_operate": [
+          {
+            "node_inspect": ".cs_panel_right.panel_cart:hidden",
+            "node_target": ".main_nav .open_panel_cart.cart",
+            "event_type": "click"
+          }
+        ]
+      }
+    ],
+    "node_empty": ".empty_state p:visible"
+  }
+}

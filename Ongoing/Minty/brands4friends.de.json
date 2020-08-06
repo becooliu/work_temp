@@ -1,0 +1,31 @@
+[
+  {
+    "url_regex": ["/checkout/products"],
+    "apply_code_type": "form",
+    "node_success_feedback": "#t-voucher-amount strong:visible",
+    "node_error_feedback": ".message-box.error:visible",
+    "node_total": "#t-total-amount .value strong",
+    "node_subtotal": "",
+    "node_discount": "#t-voucher-amount strong",
+    "node_shipping_fee": "",
+    "node_trigger_code_input": "label[for='r_code'], input[id$='.voucherCode']:not(.focus-within)",
+    "node_applied_code": "input[id$='.voucherCode']",
+    "node_code_input": "input[id$='.voucherCode']",
+    "node_code_submit": "#t-voucher-box button[type='submit']",
+    "node_code_remove": "",
+    "node_success_message": "#t-voucher-amount strong",
+    "node_error_message": ".message-box.error li",
+    "node_undefined_message": "",
+    "parse_total": "",
+    "parse_subtotal": "",
+    "parse_discount": "",
+    "parse_shipping_fee": "",
+    "parse_applied_code": "",
+    "code_applied_callbacks": [],
+    "code_removed_callbacks": [],
+    "delay_code_remove": 0,
+    "delay_code_submit": 5000,
+    "nodes_activation_required": ["#t-total-amount .value strong"],
+    "code_apply_async_actions_timeout": 40000
+  }
+]
