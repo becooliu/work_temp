@@ -1,0 +1,60 @@
+{
+  "product": [
+    {
+      "node_inspect": "#add2cart button[type='submit']",
+      "node_target": "#add2cart button[type='submit']",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": "#iframeOverlay"
+    },
+    {
+      "node_inspect": "#headerCart > a",
+      "node_target": "#headerCart > a",
+      "event_type": "click",
+      "delay_time": 2000,
+      "value": ""
+    },
+    {
+      "url": "https://www.moebelix.at/checkout?execution=\\S+"
+    },
+    {
+      "node_inspect": ".deliveryoptions .ui-selectmenu",
+      "node_target": ".deliveryoptions .ui-selectmenu",
+      "event_type": "click",
+      "delay_time": 2000,
+      "value": ""
+    },
+    {
+      "node_inspect": ".deliveryoptions select option[value!='CHOOSE']:eq(0)",
+      "node_target": ".deliveryoptions select option[value!='CHOOSE']:eq(0)",
+      "event_type": "click",
+      "delay_time": 2000,
+      "save_before_refresh": true,
+      "value": ""
+    }
+    {
+      "node_inspect": ".asides .tocheckout",
+      "node_target": ".asides .tocheckout",
+      "event_type": "click",
+      "delay_time": 1000,
+      "value": ""
+    },
+    {
+      "url": "https://www.moebelix.at/checkout?execution=\\S+"
+    }
+
+  ],
+  "clear": {
+    "url": "https://www.moebelix.at/checkout?execution=\\S+",
+    "loop_operate": [
+      {
+        "node_inspect": ".entry .delete:eq(0)",
+        "node_target": ".entry .delete:eq(0)",
+        "event_type": "click"
+      }
+    ],
+    "node_empty": ""
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "product": [
+    {
+      "node_inspect": "body:not(:has(.loading-mask)) .super-attribute-select",
+      "node_target": ".super-attribute-select",
+      "node_option": ".super-attribute-select option:eq(1)",
+      "event_type": "select",
+      "delay_time": 4000,
+      "value": ""
+    },
+    {
+      "node_inspect": "#product-addtocart-button",
+      "node_target": "#product-addtocart-button",
+      "event_type": "click",
+      "delay_time": 4000,
+      "value": ""
+    },
+    {
+      "node_inspect": ".messages .message-success.success"
+    }
+  ],
+  "clear": {
+    "url": "https://www.spielemax.de/checkout/cart/",
+    "loop_operate": [{
+      "node_inspect": ".actions-toolbar .action-delete",
+      "node_target": ".actions-toolbar .action-delete",
+      "event_type": "click"
+    }],
+    "node_empty": ".cart-empty > p:eq(0)"
+  }
+}

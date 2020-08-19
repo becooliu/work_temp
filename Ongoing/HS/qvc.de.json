@@ -1,0 +1,94 @@
+{
+  "login": [
+    {
+      "url": "https://www.qvc.de/webapp/wcs/stores/servlet/LogonForm?storeId=10253&langId=-3&catalogId=10153&krypto=",
+      "node_inspect": "#txtEmailAddress",
+      "node_target": "#txtEmailAddress",
+      "event_type": "input",
+      "value": "{account}"
+    },
+    {
+      "node_inspect": "#txtPassword",
+      "node_target": "#txtPassword",
+      "event_type": "input",
+      "value": "{password}"
+    },
+    {
+      "node_inspect": "#aWeiter",
+      "node_target": "#aWeiter",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "url": "https://www.qvc.de/webapp/wcs/stores/servlet/MyAccountView\\?bvproductid=&storeId=10253&langId=-3&catalogId=10153\\S+"
+    }
+  ],
+  "product": [
+    {
+      "node_inspect": ".buyBoxSelect ul[aria-label='Auswahl'] li:eq(0)",
+      "node_target": ".buyBoxSelect ul[aria-label='Auswahl'] li:eq(0)",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": ".btnAddToCart",
+      "node_target": ".btnAddToCart",
+      "event_type": "click",
+      "delay_time": 3000,
+      "value": ""
+    },
+    {
+      "url": "https://www.qvc.de/webapp/wcs/stores/servlet/OrderItemDisplay\\?catalogId=10153&productId=14299302&storeId=10253&krypto=\\S+",
+      "node_inspect": ".divProductButtons:eq(0) .primaryButton[type='button']",
+      "node_target": ".divProductButtons:eq(0) .primaryButton[type='button']",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "url": "https://www.qvc.de/DEAddALineCheck\\?catalogId=10153&catalogId=10153&langId=-3&storeId=10253&krypto=\\S+",
+      "node_inspect": "#txtEmailAddress",
+      "node_target": "#txtEmailAddress",
+      "event_type": "input",
+      "value": "ceshizhuanyong123@outlook.com"
+    },
+    {
+      "node_inspect": "#txtPassword",
+      "node_target": "#txtPassword",
+      "event_type": "input",
+      "value": "Mbyte123."
+    },
+    {
+      "node_inspect": "#aWeiter",
+      "node_target": "#aWeiter",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "url": "https://www.qvc.de/webapp/wcs/stores/servlet/SingleShippingAddressView\\?storeId=10253&langId=-3&catalogId=10153&catalogId=10153&krypto=\\S+",
+      "node_inspect": "#btnContinueAddressBook",
+      "node_target": "#btnContinueAddressBook",
+      "event_type": "click",
+      "delay_time": 5000,
+      "value": ""
+    },
+    {
+      "url": "https://www.qvc.de/webapp/wcs/stores/servlet/BillingDetailsView\\?storeId=10253&langId=-3&langId=-3&catalogId=10153&catalogId=10153&krypto=\\S+",
+      "node_inspect": "#btnSubmitChanges",
+      "node_target": "#btnSubmitChanges",
+      "event_type": "click",
+      "delay_time": 7000,
+      "value": ""
+    }
+  ],
+  "clear": {
+    "url": "https://www.qvc.de/OrderItemDisplay?orderId=.&langId=-3&storeId=10253&catalogId=10153",
+    "loop_operate": [
+      {
+        "node_inspect": ".prodDelete:eq(0)",
+        "node_target": ".prodDelete:eq(0)",
+        "event_type": "click"
+      }
+    ],
+    "node_empty": "#divShoppingCart p"
+  }
+}

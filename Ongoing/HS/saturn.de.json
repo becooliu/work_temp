@@ -1,0 +1,69 @@
+{
+  "product": [
+    {
+      "node_inspect": "[data-test='a2c-Button']",
+      "node_target": "[data-test='a2c-Button']",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": "#mms-styled-modal-wrapper [data-test='mms-modal-footer-buttons'] div:last-child button",
+      "node_target": "#mms-styled-modal-wrapper [data-test='mms-modal-footer-buttons'] div:last-child button",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "url": "https://www.saturn.de/checkout",
+      "node_inspect": "[data-test='checkout-continue-desktop-enabled'] button",
+      "node_target": "[data-test='checkout-continue-desktop-enabled'] button",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "url": "https://www.saturn.de/checkout/login",
+      "node_inspect": "#mms-login-form__email",
+      "node_target": "#mms-login-form__email",
+      "event_type": "input",
+      "value": "lupicia800@outlook.com"
+    },
+    {
+      "node_inspect": "#mms-login-form__password",
+      "node_target": "#mms-login-form__password",
+      "event_type": "input",
+      "value": "mBYTE123."
+    },
+    {
+      "node_inspect": "#mms-login-form__login-button",
+      "node_target": "#mms-login-form__login-button",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "url": "https://www.saturn.de/checkout",
+      "node_inspect": "[data-test='checkout-continue-desktop-enabled'] button",
+      "node_target": "[data-test='checkout-continue-desktop-enabled'] button",
+      "event_type": "click",
+      "value": ""
+    },
+    {
+      "node_inspect": "div[data-test='payment-selection-promocode']:visible"
+    }
+  ],
+  "clear": {
+    "url": "https://www.saturn.de/checkout",
+    "loop_operate": [
+      {
+        "node_inspect": "div[data-test='basket-action-buttons']:eq(0) > button",
+        "node_target": "div[data-test='basket-action-buttons']:eq(0) > button",
+        "event_type": "click"
+      },
+      {
+        "node_inspect": "div[class^='NotificationBoxStyled__StyledButtonDiv'] button:first-child",
+        "node_target": "div[class^='NotificationBoxStyled__StyledButtonDiv'] button:first-child",
+        "delay_time": 1000,
+        "event_type": "click"
+      }
+    ],
+    "node_empty": "div[data-test='basket-empty'] > p"
+  }
+}
