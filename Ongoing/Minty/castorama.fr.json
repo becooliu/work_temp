@@ -1,0 +1,46 @@
+[
+  {
+    "url_regex": ["/basket"],
+    "apply_code_type": "ajax",
+    "node_success_feedback": "",
+    "node_error_feedback": "",
+    "node_total": "[data-test-id='basket-cost-total']:visible",
+    "node_subtotal": "div:has(>span:contains('Sous-total TTC')) + span",
+    "node_discount": "",
+    "node_shipping_fee": "",
+    "node_trigger_code_input": "header[data-test-id='toggle-promotions-form-button']",
+    "code_input_triggered_callbacks": [
+      {
+        "inspector": "select[name='selectRoute']",
+        "target": "select[name='selectRoute']",
+        "type": "click"
+      },
+      {
+        "inspector": "select[name='selectRoute'] option[value='VOUCHER']",
+        "target": "select[name='selectRoute'] option[value='VOUCHER']",
+        "type": "click"
+      }
+    ],
+    "node_applied_code": "",
+    "node_code_input": "form[data-name='VOUCHER'] input[name='voucherCode']",
+    "node_code_submit": "form[data-name='VOUCHER'] button:not([disabled])",
+    "node_code_remove": "",
+    "node_success_message": "",
+    "node_error_message": "form[data-name='VOUCHER'] > div:last-child",
+    "success_message_regexp": "",
+    "error_message_regexp": ".*est invalide.*",
+    "parse_total": "",
+    "parse_subtotal": "",
+    "parse_discount": "",
+    "parse_shipping_fee": "",
+    "parse_applied_code": "",
+    "code_applied_callbacks": [],
+    "code_removed_callbacks": [],
+    "delay_code_remove": 0,
+    "delay_code_submit": 0,
+    "nodes_activation_required": [],
+    "executor_tab_policy": "",
+    "code_apply_async_actions_timeout": 10000,
+    "skip_user_confirm": true
+  }
+]
