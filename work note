@@ -1,0 +1,66 @@
+ip：13.248.165.90
+帐号：LiuPeng
+密码：mBYTE123.
+法国：10002
+德国：10001
+英国：10003
+
+英国机器：
+IP: 3.11.59.28
+Account: WuHan
+PassWord: Mbyte123.
+
+德国机器：
+IP：13.248.165.90:10001
+Username: YaoWei / LiuAn / ZhangJunKang
+Password: Mbyte123.
+
+法国机器：
+IP：35.181.31.83
+Username: YaoWei / LiuAn / ZhangJunKang
+Password: Mbyte123.
+
+"success_message_regexp": ".*successfully applied.*",
+"error_message_regexp": "^(?!successfully applied).*$",
+
+* 导入jQuery
+var importJQ=document.createElement('script')
+importJQ.setAttribute("type","text/javascript")
+importJQ.setAttribute("src", 'https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js')
+document.getElementsByTagName("head")[0].appendChild(importJQ)
+
+* 模拟click 点击
+function click(selector) {
+  const nodes = $(selector)
+  if (nodes.length !== 1) {
+    throw new Error('Node to click is missing, selector: ' + selector)
+  }
+  const mouseEventTypes = ['mousedown', 'click', 'mouseup']
+  mouseEventTypes.forEach(type => {
+    const evt = new MouseEvent(type, {
+      bubbles: true,
+      cancelable: true,
+      view: window
+    })
+    nodes[0].dispatchEvent(evt)
+  })
+}
+
+* 节点监听
+function startListener() {
+    return new Promise(resolve => {
+
+      const callback = (mutations, observer) => {
+          console.log('mutations', mutations)
+      }
+
+      const mutationObserver = new MutationObserver(callback)
+
+      mutationObserver.observe(document.body, {
+        attributes: true,
+        childList: true,
+        subtree: true
+      })
+    })
+  }
+  startListener()
