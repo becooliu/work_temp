@@ -1,0 +1,14 @@
+{
+  "coupon_list": [
+    {
+      "coupon_code": "CATCH30OFF",
+      "title": "CATCH30OFF",
+      "coupon_id": "CATCH30OFF"
+    },
+    {
+      "coupon_code": "CATCH15OFF",
+      "title": "CATCH15OFF",
+      "coupon_id": "CATCH15OFF"
+    }
+  ]
+}
